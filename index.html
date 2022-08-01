@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!--METAS-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="Golf Landing Page">
+
+  <!--STYLES-->
+  <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+  <!--Title-->
+  <title>Golf Landing Page</title>
+</head>
+<!--End Of Head-->
+
+
+<!-- Golf Store that offer Gear/Lessons and Subscription Box w/Membership to Golf Course-->
+<!-- Cart for Products -- Check Out Page -- Pricing for Subscription --Sign In for Members -->
+
+<!-- Body -->
+
+<body>
+
+  <!-- Up Arrow Button -->
+
+  <!--NavBar-->
+  <!-- Add Cart and Sign In to NavBar-->
+
+  <header>
+    <div class="container-fluid g-0">
+
+      <nav class="navbar navbar-expand-lg" style="background-color: #0a8116;">
+
+        <h1 class=" mx-2 text-white navbar-brand fs-1" href="#">Golf Store</h1>
+
+        <button class=" navbar-light navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu"
+          aria-controls="mainMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+
+        <div class="collapse navbar navbar-collapse pb-3" id="mainMenu">
+          <ul class=" nav navbar-nav mx-auto">
+            <li class="nav-item active px-3">
+              <a class="text-white fs-5 nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class=" text-white fs-5 nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="text-white fs-5 nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="text-white fs-5 nav-link" href="#lesson">Lessons</a>
+            </li>
+            <li class="nav-item px-3">
+              <a class="text-white fs-5 nav-link" href="#teacher">Booking</a>
+            </li>
+
+          </ul>
+          <!-- Add Sign Up Form Modal from Bootstrap-->
+
+          <button type="button" class="btn btn-outline-light" data-bs-target="#myModal" data-bs-toggle="modal">Log
+            In</button>
+          <div class="modal " id="myModal" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class=" text-dark modal-title">Log In</h5>
+                  <button typy="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control rounded-3" id="floatingInput"
+                        placeholder="name@example.com">
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-3" id="floatingPassword"
+                        placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-2 btn btn-lg rounded-3 btn-dark" type="submit">Login</button>
+                    <input class="text-center mt-4" id="rememberMe" type="checkbox">
+                    <label for="remember_me">Remember Me!</label>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <button type="button" class="mx-4 btn btn-light" data-bs-target="#modalSignin" data-bs-toggle="modal">Sign
+            Up</button>
+          <div class="modal modal-signin" role="dialog" id="modalSignin">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content rounded-4">
+                <div class="modal-header p-5 mb-4 border-bottom-0">
+                  <h5 class="fw-bold mb-0 text-dark">Sign Up</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-5 pt-0">
+                  <form>
+                    <div class="form-floating mb-3">
+                      <input type="email" class="form-control rounded-3" id="floatingInput"
+                        placeholder="name@example.com">
+                      <label for="floatingInput">Email Address</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                      <input type="password" class="form-control rounded-3" id="floatingPassword"
+                        placeholder="Password">
+                      <label for="floatingPassword">Password</label>
+                    </div>
+                    <button class="w-100 mb-3 btn btn-lg rounded-3 btn-dark" type="submit">Sign Up</button>
+                    <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+                    <hr class="my-4">
+                    <h6 class="text-dark fw-bold mb-3">Or use a third-party</h6>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-primary rounded-3" type="submit">
+                      <i class="bi bi-twitter" width="20" height="20"></i>
+                      Sign up with Twitter
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-dark rounded-3" type="submit">
+                      <i class="bi bi-facebook" width="20" height="20"></i>
+                      Sign up with Facebook
+                    </button>
+                    <button class="w-100 py-2 mb-2 btn btn-outline-danger rounded-3" type="submit">
+                      <i class="bi bi-google" width="20" height="20"></i>
+                      Sign up with Google
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+  </header>
+  <!--End of NavBar-->
+  <!-- MAIN -->
+
+  <main>
+    <button class="btn btn-light" onclick="topFunction()" id="myBtn" title="Go to top"><i
+        class="bi bi-arrow-up-circle"></i></button>
+    <!--HERO-->
+
+    <div id="home" class="position-relative overflow-hidden  p-md-5 text-center"
+      style="background-image: url(./assets/1.webp); background-size: cover; background-repeat: no-repeat; background-position: center; height: 100vh; width: 100%;">
+      <div class="col-md-5 p-lg-5 mx-auto my-5">
+        <h1 class="display-2 py-5 fw-normal text-white">GOLF STORE</h1>
+        <p class="lead fw-normal  text-white">Shop our Newest Golf Gear</p>
+        <a class="btn btn-light mt-5" href="#">Explore Gear</a>
+      </div>
+    </div>
+    <!-- END OF HERO-->
+    <!--PRODUCT Section-->
+    <!-- Add to Cart Btn/ Favorite icon/ Add to Subscription btn-->
+    <h1 class="text-center display-3 pb-3 mb-4 mb-5 pt-4 mt-3">Products</h1>
+    <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+
+    <div id="products" class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+
+      <div class=" me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+
+        <div class="my-3 py-3 ">
+          <h2 class="display-5">Golf Balls & Tees</h2>
+          <p class="lead">TaylorMade, Titleist, Adidas Balls and Tees</p>
+          <button class="btn btn-dark">View Clubs</button>
+        </div>
+        <div class="product-item mx-auto "
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(./assets/b.webp); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        </div>
+      </div>
+      <div class=" me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Golf Clubs</h2>
+          <p class="lead">Drivers, Putter, Wedges and Wood Clubs</p>
+          <button class="btn btn-dark">View Clubs</button>
+        </div>
+
+        <div class="mx-auto product-item"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(./assets/6.webp); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        </div>
+
+      </div>
+    </div>
+    <div class="d-md-flex flex-md-equal w-100 p-3 my-md-3 ps-md-3 pb-4">
+      <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 p-3 ">
+          <h2 class="display-5">Clothes</h2>
+          <p class="lead">Polo Tees, Khakis, Shorts, Hats, & Shoes</p>
+          <button class="btn btn-dark">View Clubs</button>
+        </div>
+        <div class="mx-auto product-item"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(./assets/outfit.webp); background-size: cover; background-repeat: no-repeat; background-position: center;  ">
+        </div>
+      </div>
+      <div class="me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+        <div class="my-3 py-3">
+          <h2 class="display-5">Golf Carts</h2>
+          <p class="lead">Brand New Electric Golf Carts</p>
+          <button class="btn btn-dark">View Clubs</button>
+        </div>
+        <div class="product-item mx-auto"
+          style="width: 80%; height: 300px; border-radius: 21px 21px 0 0; background-image: url(./assets/cart.webp); background-size: cover; background-repeat: no-repeat; background-position: center; ">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- End of PRODUCTS SECTION-->
+    <!-- Start of LESSON SECTION-->
+    <!-- 3 Lessons Beginner, Pro, Tour-->
+    <!-- Flip Instructors -->
+
+
+    <div id="lesson" class="container mb-3 pb-3">
+      <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+      <h1 class="mt-3 mb-3 pt-3 pb-3 text-center display-3">Lessons</h1>
+      <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+
+      <div class=" row mt-3 mb-3 pt-3 pb-3">
+        <div class="col-lg-4 mt-3 pt-3 mb-3 pb-3 text-center ">
+          <img class="rounded-circle" width="140" height="140" role="img" alt="Golf Lesson Avatar"
+            src="./assets/1.webp" />
+          <h2 class="fw-normal">Lesson #1</h2>
+
+          <p>Description of Lesson #1</p>
+          <p><a class="btn btn-dark" href="#">View Lesson</a></p>
+        </div>
+        <div class="col-lg-4 mt-3 pt-3 mb-3 pb-3 text-center ">
+          <img class="rounded-circle" width="140" height="140" role="img" alt="Golf Lesson Avatar"
+            src="./assets/1.webp"></img>
+          <h2 class="fw-normal">Lesson #1</h2>
+
+          <p>Description of Lesson #1</p>
+          <p><a class="btn btn-dark" href="#">View Lesson</a></p>
+        </div>
+        <div class="col-lg-4 mt-3 pt-3 mb-3 pb-3  text-center">
+          <img class="rounded-circle" width="140" height="140" role="img" alt="Golf Lesson Avatar"
+            src="./assets/1.webp" />
+          <h2 class="fw-normal">Lesson #1</h2>
+
+          <p>Description of Lesson #1</p>
+          <p><a class="btn btn-dark" href="#">View Lesson</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- END OF LESSON SECTION-->
+    <!-- INSTRUCTORS SECTION -->
+    <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+    <h1 class="text-center display-3 pb-3 mb-4 mb-5 pt-4 mt-3">Meet our Top Instructors</h1>
+    <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+    <div id="teacher" class="row mt-3 pt-3 featurette my-3" style="margin: 0 auto">
+      <div class="col-md-7 mt-3 pt-3 justify-content-center text-center ">
+        <h2 class="featurette-heading fw-normal lh-1">Phil Woods</h2>
+        <p class="lead mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, natus est at
+          accusantium
+          magnam excepturi, quas vitae commodi, nihil ex distinctio. Odio quas officiis libero ut praesentium
+          excepturi necessitatibus. Ullam.</p>
+        <button class="pt-2 pt-2 btn btn-dark">More Info</button>
+      </div>
+      <div class="text-center col-md-5 pt-3 mt-3 mb-3">
+        <img class="bd-placeholder-img bg-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="assets/2.webp" alt="Golf Instructor Avatar" role="img"></img>
+
+      </div>
+
+    </div>
+    <div class="row mt-3 pt-3 featurette my-3" style="margin: 0 auto">
+      <div class="col-md-7 order-md-2 my-3 pt-3 justify-content-center text-center ">
+        <h2 class="featurette-heading fw-normal lh-1 ">Phil Woods</h2>
+        <p class="lead mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, natus est at
+          accusantium
+          magnam excepturi, quas vitae commodi, nihil ex distinctio. Odio quas officiis libero ut praesentium
+          excepturi necessitatibus. Ullam.</p>
+        <button class="pt-2 pt-2 btn btn-dark">More Info</button>
+      </div>
+      <div class="col-md-5 order-md-1 my-3 py-3 mt-3 mb-3 text-center">
+        <img class="bd-placeholder-img bg-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="assets/2.webp" alt="Golf Instructor Avatar" role="img"></img>
+
+      </div>
+
+    </div>
+    <div class="row mt-3 pt-3 featurette my-3" style="margin: 0 auto">
+      <div class="col-md-7 mt-3 pt-3 justify-content-center text-center ">
+        <h2 class="featurette-heading fw-normal lh-1">Phil Woods</h2>
+        <p class="lead mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, natus est at
+          accusantium
+          magnam excepturi, quas vitae commodi, nihil ex distinctio. Odio quas officiis libero ut praesentium
+          excepturi necessitatibus. Ullam.</p>
+        <button class="pt-2 pt-2 btn btn-dark">More Info</button>
+      </div>
+      <div class=" text-center col-md-5 pt-3 mt-3 mb-3">
+        <img class="bd-placeholder-img bg-placeholder-img-lg featurette-image img-fluid mx-auto" width="500"
+          height="500" src="assets/2.webp" alt="Golf Instructor Avatar" role="img"></img>
+
+      </div>
+
+    </div>
+    </div>
+    <!-- END OF Instructors SECTION -->
+    <!-- ABOUT US SECTION-->
+    <div id="about" class="container my-5">
+      <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+      <h1 class="text-center display-3 pb-3 mb-4 mb-5 pt-4 mt-3">About</h1>
+      <hr style="padding-bottom: 1rem; margin: 0 auto; width: 80%;" />
+
+      <div class="row">
+        <div class="col-md-6 p-4 p-sm-5 order-2 order-sm-1">
+
+          <h1 clas="mb-4">Our Mission</h1>
+
+          <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam ut labore in fugiat
+            ea eius, similique impedit ducimus, voluptatibus voluptate distinctio, tempore mollitia minus dolores
+            provident animi suscipit voluptates molestiae.</p>
+        </div>
+        <div class="col-md-6 p-0 text-center order-1 order-sm-2">
+          <img src="./assets/4.webp" alt="About Golf Store" width="300" height="400" class="w-100"></img>
+        </div>
+        <div class="col-md-6 p-4 p-sm-5">
+          <img src="./assets/4.webp" alt="About Golf Store" width="300" height="400" class="w-100"> </img>
+        </div>
+        <div class="col-md-6 p-4 p-sm-5">
+
+          <h1 class="mb-4">About Us</h1>
+
+          <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis ut similique fuga
+            voluptates, nihil laborum beatae inventore! Adipisci animi, voluptates corrupti minus magni, quidem voluptas
+            magnam nemo dolores sit ea!</p>
+        </div>
+      </div>
+    </div>
+    <!--END OF ABOUT US-->
+
+  </main>
+
+
+
+
+  <!--FOOTER -->
+  <div class="container-fluid text-bg-dark ">
+
+    <footer class="py-5">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3">
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <h3 class="text-white">Menu</h3>
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-3">
+          <ul class="nav flex-column">
+            <h3 class="text-white">Products</h3>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-2 mb-1">
+          <ul class="nav flex-column">
+            <h3 class="text-white">Lessons</h3>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-5 offset-md-1 mb-3 mt-3">
+
+          <form>
+            <h5 class="text-white">Join our Community</h5>
+            <p class="text-white">Monthly deals on new gear</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newletter1" class="visually-hidden">Email Address</label>
+              <input id="newsletter1" class="form-control" type="text" placeholder="Email Address">
+              <button class="btn btn-light sendButton" type="button">Subscribe</button>
+              <div class="alert alert-success fade show" role="alert">
+                <button type="button" class="close" data-bs-dismiss="alert"></button>
+                <p>Thanks for Joining our Community! Please check your email for our newest Deals!</p>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-2 my-2 border-top">
+          <p class="text-white pt-2 mb-2">2022 @Golf Store, Inc. All rights reserved</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class=link-light href="#">
+                <i class="bi bi-twitter" style="font-size: 32px;"></i>
+              </a></li>
+            <li class="ms-3"><a class=link-light href="#">
+                <i class="bi bi-facebook" style="font-size: 32px;"></i>
+              </a></li>
+            <li class="ms-3"><a class=link-light href="#">
+                <i class="bi bi-instagram" style="font-size: 32px;"></i>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </footer>
+  </div>
+  <!-- END of FOOTER-->
+  <!-- Add OnClicks, Animations, Add to Cart, Smooth Scrolling -->
+  <script src="./index.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<!-- Add Transformations to Product Images -->
+
+<!-- Add menu icon for mobile, add padding to lesson-->
